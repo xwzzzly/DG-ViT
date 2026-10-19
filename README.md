@@ -2,8 +2,7 @@
 
 DG-ViT code for fusing multi-spaceborne GNSS-R observations for soil moisture retrieval over the Tibetan Plateau, accompanying our manuscript under review at JAG.
 
-This repository contains the DG-ViT model and land cover informed prior weight estimation code. Keep the repository Private while the manuscript is under review; repository visibility is controlled by GitHub settings.
-
+This repository contains the DG-ViT model and land cover informed prior weight estimation code. 
 ## Scope
 
 Included:
