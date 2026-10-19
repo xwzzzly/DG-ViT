@@ -1,0 +1,62 @@
+{
+  "source_names": [
+    "CYGNSS",
+    "Tianmu-1",
+    "FY-3E",
+    "FY-3F",
+    "FY-3G"
+  ],
+  "model": {
+    "image_size": 160,
+    "patch_size": 8,
+    "embed_dim": 256,
+    "depth": 6,
+    "num_heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "use_checkpoint": true,
+    "lambda_prior": 1,
+    "alpha_floor": 0.05,
+    "sample_dirichlet_during_training": true
+  },
+  "normalization": {
+    "means": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stds": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "data": {
+    "valid_min_db": -80,
+    "valid_max_db": 0,
+    "nodata": -9999,
+    "train_fraction": 0.8,
+    "samples_per_epoch": 1200,
+    "validation_samples": 240,
+    "num_workers": 0,
+    "seed": 20260727
+  },
+  "training": {
+    "epochs": 80,
+    "batch_size": 1,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "tv_weight": 0.0005,
+    "gradient_clip": 1,
+    "patience": 12
+  },
+  "inference": {
+    "tile_size": 160,
+    "overlap": 48,
+    "batch_size": 1
+  }
+}
