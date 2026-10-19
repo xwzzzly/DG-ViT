@@ -14,7 +14,6 @@ Included:
 - compute_normalization.py and build_manifest.py: utilities for users to prepare their own model inputs.
 - Supporting configuration, data-loading, raster, loss, metric, and model-factory modules under dgvit/.
 
-No observational data, measured prior-weight tables, estimated normalization statistics, training logs, model checkpoints, experiment results, or Monte Carlo records are distributed. Satellite-specific CYGNSS L1 preprocessing, quality-control and regridding scripts are excluded. Generic raster loading, alignment and validity masking remain because the model requires them.
 
 ## Inputs and configuration
 
